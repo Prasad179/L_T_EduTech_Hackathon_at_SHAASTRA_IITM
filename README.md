@@ -28,3 +28,9 @@ They are as follows:
 5. Xception
 
 Looking at the results, we can see that, Resnet152V2 and VGG19 are out of competition as best CNN architecture for our particular problem. MobilenetV2, Efficientnet and Xception are giving nearly same F1 score. MobilnetV2 and Xception are lightweight architechture. Between those two, I have selected Xception for further analysis. 
+
+### Results and discussion:
+
+On the top of Xception model, I have added one Conv2D, one dropout layer to avoid overfitting, one GlobalAveragePooling2D and last layer is dense layer which gives probabilities of each class with the help of softmax activation function.
+
+The developed model with Xception gives accuracy approximately around 92%-93% and weighted F1 score around 0.92. These results are after 20 epochs. If we increase epochs, accuracy increases slightly.
