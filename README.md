@@ -18,7 +18,7 @@ There are 5 classes of ships to be detected which are as follows:
 4. Cruise
 5. Tankers
 
-To design transfer learning based CNN architecture, I have compared five pretrained CNN models. To select the best among them, I have considered the weighted F1 score as a metric, as the problem is an imbalanced multi-class classification problem.
+To design transfer learning based CNN architecture, I have compared five pretrained CNN models. In those model I have not used fine tuning as it was resulting in low accuracy. To select the best among them, I have considered the weighted F1 score as a metric, as the problem is an imbalanced multi-class classification problem.
 
 They are as follows:
 1. MobilenetV2
@@ -27,3 +27,4 @@ They are as follows:
 4. VGG19
 5. Xception
 
+Looking at the results, we can see that, Resnet152V2 and VGG19 are out of competition as best CNN architecture for our particular problem. MobilenetV2, Efficientnet and Xception are giving nearly same F1 score. MobilnetV2 and Xception are lightweight architechture. Between those two, I have selected Xception for further analysis. 
