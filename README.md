@@ -41,3 +41,7 @@ The same Xception architecture is used for comparison. From the results one can 
 Kappa Score for 80% training data = 0.9465
 
 Kappa Score for 90% training data = 0.9467
+
+Code for selection of pretrained model is in the PS_3_1.ipynb file. I have ran this code on Google Colab. To access data, we have to upload kaggle.json file in the content folder in Colab.
+
+Code for optimum training dataset is in PS_3_2.ipynb file. I have ran this code on Kaggle. I have directly added data from kaggle, we can add data in the notebook.
