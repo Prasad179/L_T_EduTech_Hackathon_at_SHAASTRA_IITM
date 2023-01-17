@@ -44,4 +44,14 @@ Kappa Score for 80% training data = 0.9467
 
 Code for selection of pretrained model is in the PS_3_1.ipynb file. I have ran this code on Google Colab. To access data, we have to upload kaggle.json file in the content folder in Colab.
 
-Code for optimum training dataset is in PS_3_2.ipynb file. I have ran this code on Kaggle. I have directly added data from kaggle, we can add data in the notebook.
+Code for optimum training dataset is in PS_3_2.ipynb file. In this code, the graph of Kappa score vs training data has mistake in X axis scale. It should be from 0.1 to 0.8. I have ran this code on Kaggle. I have directly added data from kaggle, we can add data in the notebook.
+
+In the PS_3_2_modified.ipynb, I have corrected small mistake in graph and re-ran again. This is giving some interesting results.
+
+Kappa score for 60% training data = 0.9383
+
+Kappa score for 70% training data = 0.9341
+
+Kappa score for 80% training data = 0.9344
+
+As we can see from above results, Kappa score corresponding to 60% is slightly higher, but from previous run and this modified code, one can conclude that 70% training data is optimum for model and accuracy can be increased by increasing epochs.
