@@ -33,7 +33,7 @@ Looking at the results, we can see that Resnet152V2 and VGG19 are out of competi
 
 On the top of Xception model, I have added one Conv2D, one dropout layer to avoid overfitting, one GlobalAveragePooling2D and last layer is dense layer which gives probabilities of each class with the help of softmax activation function.
 
-The developed model with Xception gives accuracy approximately around 92%-93% and weighted F1 score around 0.92. These results are after 20 epochs. If we increase epochs, accuracy increases slightly.
+The developed model with **Xception** gives **accuracy** approximately around **92%-93%** and weighted **F1 score** around **0.92**. These results are after **20 epochs**. If we increase epochs, accuracy increases slightly.
 
 To get optimum training dataset, I have splitted data as 90% training, 5% validation data and 5% test data. From the 90% data, I have splitted data from 10% to 80%.
 The same Xception architecture is used for comparison. From the results one can observe that, there is no much difference in Kappa score for 70% training data and 80% training data. Hence we can conclude that optimum training data for training is approximately 70% of dataset.
@@ -50,8 +50,8 @@ In the PS_3_2_modified.ipynb, I have corrected small mistake in graph and re-ran
 
 Kappa score for 60% training data = 0.9383
 
-Kappa score for 70% training data = 0.9341
+Kappa score for 70% training data = **0.9341**
 
-Kappa score for 80% training data = 0.9344
+Kappa score for 80% training data = **0.9344**
 
-As we can see from above results, Kappa score corresponding to 60% is slightly higher, but from previous run and this modified code, one can conclude that 70% training data is optimum for model and accuracy can be increased by increasing epochs.
+As we can see from above results, Kappa score corresponding to 60% is slightly higher, but from previous run and this modified code, one can conclude that **70% training data** is optimum for model and accuracy can be increased by increasing epochs.
