@@ -14,7 +14,15 @@ There are 600 iamges which contains 300 images of cracked surface and 300 of non
 
 ### Results and discussion:
 
-From the literature, we have selected MobilenetV2 as our pretrained model, as it performs better than many other models, and it is light weight model.
+From the literature, we have selected MobilenetV2 as our pretrained model, as it performs better than many other models, and it is light weight model. We have used fine tuning for our model. After fine tuning accuracy of model increases.
+
+The following results are of test dataset. The accuracy of model is 98% and weighted F1 score is 98%.
+
+| Class Name    |   Precision    |  Recall | F1 Score |
+| ------------- | -------------- | --------|----------|
+|  Non-cracked  |     0.97       |   1.0   |   0.99   |
+|  Cracked      |     1.0        |   0.97  |   0.98   |
+
 
 
 ### Problem Statement 3:
