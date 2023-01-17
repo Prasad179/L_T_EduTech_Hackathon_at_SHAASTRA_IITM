@@ -35,7 +35,7 @@ On the top of Xception model, I have added one Conv2D, one dropout layer to avoi
 
 The developed model with Xception gives accuracy approximately around 92%-93% and weighted F1 score around 0.92. These results are after 20 epochs. If we increase epochs, accuracy increases slightly.
 
-To get optimum training dataset, I have splitted data as 90% training, 5% validation data and 5% test data. From the 90% data, I have splitted data from 20% to 90%.
+To get optimum training dataset, I have splitted data as 90% training, 5% validation data and 5% test data. From the 90% data, I have splitted data from 10% to 80%.
 The same Xception architecture is used for comparison. From the results one can observe that, there is no much difference in Kappa score for 70% training data and 80% training data. Hence we can conclude that optimum training data for training is approximately 70% of dataset.
 
 Kappa Score for 70% training data = 0.9465
