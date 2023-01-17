@@ -1,4 +1,22 @@
 # L&T EduTech Hackathon at SHAASTRA IITM
+
+### Problem Statement 1:
+Description: Concrete cracking is a major issue in Bridge Engineering. Detection of cracks facilitates the design, construction and maintenance of bridges effectively.
+
+### Requirement Specification:
+Develop a suitable Deep Learning framework which can detect the crack in the image from the dataset
+
+### Judging Metrics:
+Provide Precision, Recall and F1 score as Judging metrics
+
+### Dataset Description:
+There are 600 iamges which contains 300 images of cracked surface and 300 of non-cracked images. In the test and validation dataset there are 200 images in each dataset.
+
+### Results and discussion:
+
+From the literature, we have selected MobilenetV2 as our pretrained model, as it performs better than many other models, and it is light weight model.
+
+
 ### Problem Statement 3:
 ### Description: 
 Natural disasters and atmospheric anomalies demand remote monitoring and maintenance of naval objects especially big-size ships. For example, under poor weather conditions, prior knowledge about the ship model and type helps the automatic docking system process to be smooth. Thus, this set aims to classify the type of ships from an image data set of ships.
