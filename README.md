@@ -27,10 +27,17 @@ They are as follows:
 4. VGG19
 5. Xception
 
-Looking at the results, we can see that, Resnet152V2 and VGG19 are out of competition as best CNN architecture for our particular problem. MobilenetV2, Efficientnet and Xception are giving nearly same F1 score. MobilnetV2 and Xception are lightweight architechture. Between those two, I have selected Xception for further analysis. 
+Looking at the results, we can see that Resnet152V2 and VGG19 are out of competition as the best CNN architecture for our particular problem. MobilenetV2, Efficientnet, and Xception are giving nearly the same F1 score. MobilnetV2 and Xception are lightweight architectures. Between those two, I have selected Xception for further analysis.
 
 ### Results and discussion:
 
 On the top of Xception model, I have added one Conv2D, one dropout layer to avoid overfitting, one GlobalAveragePooling2D and last layer is dense layer which gives probabilities of each class with the help of softmax activation function.
 
 The developed model with Xception gives accuracy approximately around 92%-93% and weighted F1 score around 0.92. These results are after 20 epochs. If we increase epochs, accuracy increases slightly.
+
+To get optimum training dataset, I have splitted data as 90% training, 5% validation data and 5% test data. From the 90% data, I have splitted data from 20% to 90%.
+The same Xception architecture is used for comparison. From the results one can observe that, there is no much difference in Kappa score for 80% training data and 90% training data. Hence we can conclude that optimum training data for training is approximately 80% of dataset.
+
+Kappa Score for 80% training data = 0.9465
+
+Kappa Score for 90% training data = 0.9467
