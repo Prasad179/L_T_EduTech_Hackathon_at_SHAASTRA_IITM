@@ -1,6 +1,6 @@
 # L&T EduTech Hackathon at SHAASTRA IITM
 
-### Problem Statement 1:
+## Problem Statement 1:
 Description: Concrete cracking is a major issue in Bridge Engineering. Detection of cracks facilitates the design, construction and maintenance of bridges effectively.
 
 ### Requirement Specification:
@@ -25,7 +25,7 @@ The following results are of test dataset. The accuracy of model is 98% and weig
 
 
 
-### Problem Statement 3:
+## Problem Statement 3:
 ### Description: 
 Natural disasters and atmospheric anomalies demand remote monitoring and maintenance of naval objects especially big-size ships. For example, under poor weather conditions, prior knowledge about the ship model and type helps the automatic docking system process to be smooth. Thus, this set aims to classify the type of ships from an image data set of ships.
 
@@ -64,9 +64,9 @@ The developed model with **Xception** gives **accuracy** approximately around **
 To get optimum training dataset, I have splitted data as 90% training, 5% validation data and 5% test data. From the 90% data, I have splitted data from 10% to 80%.
 The same Xception architecture is used for comparison. From the results one can observe that, there is no much difference in Kappa score for 70% training data and 80% training data. Hence we can conclude that optimum training data for training is approximately 70% of dataset.
 
-Kappa Score for 70% training data = 0.9465
+**Kappa Score for 70% training data = 0.9465**
 
-Kappa Score for 80% training data = 0.9467
+**Kappa Score for 80% training data = 0.9467**
 
 Code for selection of pretrained model is in the PS_3_1.ipynb file. I have ran this code on Google Colab. To access data, we have to upload kaggle.json file in the content folder in Colab.
 
@@ -74,10 +74,10 @@ Code for optimum training dataset is in PS_3_2.ipynb file. In this code, the gra
 
 In the PS_3_2_modified.ipynb, I have corrected small mistake in graph and re-ran again. This is giving some interesting results.
 
-Kappa score for 60% training data = 0.9383
+**Kappa score for 60% training data = 0.9383**
 
-Kappa score for 70% training data = **0.9341**
+**Kappa score for 70% training data = 0.9341**
 
-Kappa score for 80% training data = **0.9344**
+**Kappa score for 80% training data = 0.9344**
 
 As we can see from above results, Kappa score corresponding to 60% is slightly higher, but from previous run and this modified code, one can conclude that **70% training data** is optimum for model and accuracy can be increased by increasing epochs.
